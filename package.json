@@ -1,0 +1,22 @@
+{
+  "name": "luanmuniz",
+  "version": "0.0.1",
+  "description": "My link at NPM",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanmuniz/luanmuniz.git"
+  },
+  "author": "Luan Muniz <luan@luanmuniz.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luanmuniz/luanmuniz/issues"
+  },
+  "main": "./info.json",
+  "scripts": {
+    "preversion": "git pull",
+    "postversion": "git push && npm publish --access=public && git push --tags",
+    "postinstall": "cat info.json"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
